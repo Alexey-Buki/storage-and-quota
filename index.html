@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"/><title>Storage and Permission</title><style>.container {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .inner {
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: baseline;
+            }
+
+            .remove-file {
+                padding: 0 5px;
+                cursor: pointer;
+                color: blue;
+            }
+
+            .file-item {
+                margin: 10px 0;
+            }
+
+            .remove-file:hover {
+                color: red;
+            }</style><script defer="defer" src="main.js"></script></head><body><div class="container"><h1 style="text-align: center;">Quota & Storage</h1><div class="inner"><div class="uploader"><form action="javascript:void(0)"><input type="number" id="count" min="0" max="9999" value="0"/> <button type="button" id="increase">Increase</button> <button type="button" id="decrease">Decrease</button> <button type="button" id="clear">Clear</button></form><div id="file-list"></div></div><div><div id="quota-storage"></div><br/><div id="storage-info"></div></div></div></div></body></html>
